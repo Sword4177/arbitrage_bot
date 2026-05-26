@@ -15,6 +15,8 @@ while True:
     print(f"OKX:     {okx_price}")
     print(f"价差:    {spread:.2f} USDT ({spread_pct:.4f}%)")
     print("-" * 40)
+    if abs(spread_pct)>0.05:
+        print("套利机会")
     
     time.sleep(5)
         
